@@ -6,7 +6,7 @@ Wants=time-sync.target
 Type=oneshot
 User=root
 RemainAfterExit=true
-ExecStart=/usr/bin/tuptime -x
+ExecStart=/usr/bin/tuptime -xb
 ExecStop=/usr/bin/tuptime -xg
 
 [Install]

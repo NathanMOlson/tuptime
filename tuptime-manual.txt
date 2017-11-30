@@ -181,6 +181,7 @@ For OSX system:
 These are the command line options, no configuration file is used:
 
   -h, --help            show this help message and exit
+  -b, --boot            register a new startup
   -c, --csv             csv output
   -d DATE_FORMAT, --date=DATE_FORMAT
                         date format output
@@ -212,6 +213,15 @@ These are the command line options, no configuration file is used:
   Examples:
          tuptime -h
          tuptime --help
+
+
+-b, --boot
+  Register new startup in the db as a graceful shutdown.  This is
+  used in the init.d and systemd files at the startup process.
+
+  Examples:
+         tuptime -b
+         tuptime --boot
 
 
 -c, --csv

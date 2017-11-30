@@ -27,7 +27,7 @@ LOCKFILE="/var/lock/subsys/$BIN_NAME"
 do_start () {
         # Start service
         echo -n $"Starting tuptime: "
-	daemon -u $USER $PATH_BIN -x
+	daemon -u $USER $PATH_BIN -xb
         retval=$?
          echo
         [ $retval -eq 0 ] && touch ${LOCKFILE}
