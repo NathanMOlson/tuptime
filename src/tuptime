@@ -978,6 +978,7 @@ def main():
     last_btime, last_uptime = conn.fetchone()
     logging.info('Last btime from db = ' + str(last_btime))
     logging.info('Last uptime from db = ' + str(last_uptime))
+    lasts = last_btime + last_uptime
 
     if arg.update is True:
         try:
